@@ -2,33 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>GETCHO COFFEE!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Genos:wght@200;600&family=Yuji+Boku&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cdf7e2310.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Coffee!</h1>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <ul class="navbar-nav">
+        <a class="nav-link" href="#"><p>Call us now! 210-555-5555</p></a>
+    </ul>
+</nav>
+<div class="mobile-hide">
+    <div class="jumbotron bg-cover jumbotron-fluid" style="background-image: url(photos/img.png)">
+        <div class="container">
+            <h1 class="display-4">Codey's Coffee</h1>
+            <p class="tag">Just brew it <i class="fas fa-mug-hot"></i></p>
+        </div>
+    </div>
+</div>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
+<main class="container">
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+    <div class="row m-0">
+        <div class="col-5">
+            <h1>Our Coffees</h1>
+            <div id="coffees">
+            </div>
+        </div>
+        <div class="col-5">
+            <h1>User Coffees</h1>
+            <div id="newcoffees"></div>
+        </div>
+        <div class="col-2 p-0 m-0">
+            <div class="row m-0">
+                <div class="card">
+                    <div class="card ">
+                        <form class="d-flex">
+                            <label for="roast-selection"></label>
+                            <select class="flex-grow-1" id="roast-selection">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                                <option>all</option>
+                            </select>
+                            <input id="submit" type="submit"/>
+                        </form>
+                        <form id="form">
+                            <input type="search" id="query" class="searchBox" placeholder="Search...">
+                            <button id="searchbtn">Search</button>
+                        </form>
+                    </div>
+                    <form class=add-coffee">
+                        <div class="card">
+                            <label for="addRoast"></label>
+                            <select id="addRoast">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <input type="text"  id="addCoffee" placeholder="Add a coffee"/>
 
-    <script src="main.js"></script>
+                            <input type="text" maxlength = "40" id="addDescription"  placeholder="add description"/>
+                            <p style="color: white">*max char 40</p>
+                            <input id="submitcoffee" type="submit"/>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <br>
+            <div class="about">About us:
+                <br>We are passionate coffee brewers who only use the best coffee beans found in the coffee belt. Although we were established in 2014, our brewing methods go back to the 1800's when our family first came to the Americas.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Codey's Coffee est. 2014<br>
+            San Antonio, Tx 78205 <br>
+            210-555-5555 <br></p>
+        <a href=""> <i class="fab fa-facebook"></i> </a><a href=""><i class="fab fa-twitter"></i> </a><a href=""><i class="fas fa-envelope"> </i></a><a href=""><i class="fas fa-phone"></i></a>
+    </div>
+</main>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 </html>

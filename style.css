@@ -1,9 +1,114 @@
+
+body {
+    background-color: #6a8e7f;
+}
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
 }
-
+#query {
+    width: 99%;
+}
+#searchcard {
+    border: none;
+}
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+#roast-selection, #query, #searchbtn, #submit, #addRoast, #addCoffee, #addDescription, #submitcoffee{
+    border: none;
+    padding: .5em;
+    margin: 1px;
+    width: 99%;
+}
+
+.searchBox, #addCoffee, #addDescription {
+    opacity: 0.8;
+}
+
+.light {
+    color: #a0522d;
+}
+
+.medium {
+    color: #80461b;
+}
+
+.dark{
+    color: #654321;
+}
+.coffee {
+    width: 33%;
+}
+
+h1 {
+    max-height: fit-content;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Architects Daughter', cursive, sans-serif;
+    text-shadow: 1px 1px black;
+    color: darkslategrey;
+
+}
+h2 {
+    font-family: 'Genos', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px #808080;
+}
+h4 {
+    color: #800000;
+    font-family: 'Architects Daughter', cursive, sans-serif;
+
+}
+.hide {
+    display: none;
+}
+.roast:hover + .hide {
+    display: block;
+}
+
+.tag {
+    display: flex;
+    color: black;
+    font-family: 'Yuji Boku', serif;
+    padding-left: 200px;
+    text-shadow: 1px 1px saddlebrown;
+    font-size: 20px;
+}
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+i {
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.footer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+a {
+    color: #654321;
+}
+
+.card {
+    background-color: darkslategrey;
+}
+
+.nav-link {
+    text-align: center;
+    margin-left: 650px;
+}
+.about{
+    text-align:center;
+    color: #d5dcdc;
+    text-shadow: 1px 1px black;
+}
+
